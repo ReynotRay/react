@@ -5,7 +5,7 @@
   "main": "app.js",
   "scripts": {
     "test": "standard",
-    "build": "js/clientapp.js public/bundle.js"
+    "build": "webpack"
   },
   "author": "Brian Holt <btholt@gmail.com>",
   "license": "MIT",
