@@ -1,18 +1,14 @@
-var React = require('react')
-var ReactDOM = require ('react-dom')
-var MyTitle = require('./MyTitle')
+const React = require('react')
+const ReactDOM = require('react-dom')
 
-var div = React.DOM.div
-
-var MyTitleFact = React.createFactory(MyTitle)
-var ce = React.createElement
-
-var MyFirstComponent = (
-	div(null,
-		MyTitleFact({title: 'Props are great!', color: 'rebeccapurple'}),
-		React.createElement(MyTitle,{title: 'use props everywhere!', color: 'mediumaquamarine'}),
-		ce(MyTitle,{title: 'Props are the best!', color: 'papayawhip'})
-	)
+const App = () => (
+  <div className='app-container'>
+    <div className='home-info'>
+      <h1 className='title'>svideo</h1>
+      <input className='search' type='text' placeholder='Search' />
+      <button to='/search' className='browse-all'> or Browse Allasdfa</button>
+    </div>
+  </div>
 )
 
-ReactDOM.render(MyFirstComponent, document.getElementById('app'))
+ReactDOM.render(<App />, document.getElementById('app'))
