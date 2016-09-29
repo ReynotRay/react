@@ -1,7 +1,6 @@
 const React = require('react')
-const ReactDOM = require('react-dom')
 
-const App = () => (
+const Landing = () => (
   <div className='app-container'>
     <div className='home-info'>
       <h1 className='title'>svideo</h1>
@@ -11,4 +10,4 @@ const App = () => (
   </div>
 )
 
-ReactDOM.render(<App />, document.getElementById('app'))
+module.exports = Landing
